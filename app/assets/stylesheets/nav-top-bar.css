@@ -1,0 +1,132 @@
+.nav-content{
+	z-index:9;
+	height: 4em;
+	background-color:#ffffff ;
+}
+@media screen and (max-width: 800px){
+	.nav-content{
+		height: 8em;
+		background-color:#ffffff ;
+	}
+}
+
+.top-bar{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+}
+@media screen and (max-width: 800px){
+	.top-bar{
+		margin-top: 3em;
+		justify-content: flex-start;
+	}
+}
+
+.items{
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+}
+@media screen and (max-width: 800px){
+	.items{
+		isplay: flex;
+		flex-wrap: wrap;
+		-webkit-box-pack: space-evenly;
+		justify-content: space-evenly;
+		flex-direction: row;
+		align-content: flex-end;
+		align-self: baseline;
+		position: absolute;
+		top: 5em;
+	}
+}
+
+.menu-top{
+	padding: 0 14px 0 12px;
+}
+@media screen(max-width: 500px){
+	.menu-top{
+		padding: 0 14px 0 12px;
+	}
+}
+
+.border-menu{
+	color:#b39361;
+}
+@media screen(max-width: 500px){
+	.border-menu{
+		color:#b39361;
+	}
+}
+
+.nav-items{
+
+}
+@media screen and (max-width: 800px){
+	.nav-items{
+		height: 1.9em;
+	}
+}
+.none-boder{
+	border:none;
+}
+@media screen(max-width: 800px){
+}
+
+.menu-search{
+	background-color: rgba(179, 147, 97, 0.23);
+	height: 40px;
+	border: none;
+}
+@media screen and (max-width: 800px){
+	.menu-search{
+		width:80%;
+		border-radius: 0%;
+		height: 2.1em;
+	}
+}
+.menu-search:focus{
+	  width: 17em;
+	  background-color: #f6f4eecc;
+	  box-shadow: 1px 0px 0.5px 1px rgb(179,147,97);
+	  padding-left: 1em;
+}
+.search-bar{
+	border-radius:5%;
+}
+@media screen and (max-width: 800px){
+	.search-bar{
+		width: 85%;
+		margin-left:2em;
+	}
+}
+@media screen and (max-width: 800px){
+	.logo-nav-bar{
+		position: absolute;
+		top: -1em;
+		color:red;
+	}
+	.search-bar,.menu-nav-top{
+		align-self: center;
+		color:red;
+	}
+}
+.logo-header{
+	height: 6em;
+	width: 10em;
+	position: absolute;
+	top: -0.8em;
+	left: 13%;
+}
+@media screen and (max-width: 800px){
+	.logo-header{
+		top: 0;
+	}
+}
+@media screen and (min-width: 801px) and (max-width: 1180px){
+	.logo-header{
+		left:2% !important;
+	}
+}
+

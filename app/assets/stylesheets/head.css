@@ -1,0 +1,56 @@
+.p-W3-s{
+	width: 100%;
+	height: 100%;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    align-items: center;
+    z-index: 1050;
+}
+.soutenir-bl-h{
+	color:#b39361;
+}
+.BreUi{
+    font-size: 35px;
+	font-weight: bold;
+	color:#ffffff !important;
+	opacity:1;
+}
+@media screen and (max-width: 617px){
+	.BreUi{
+	    font-size: 18px;
+	}
+}
+.slogan{
+	color:white;
+}
+@media screen and (max-width: 617px){
+	.slogan{
+		font-size:10px;
+	}
+}
+
+.img-background{
+	margin-top: -13px !important;
+	background-image: url('fond/fond_2.jpg');
+    height: 30em;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color:grey;
+    border-radius:5px;
+    margin-left:1px;
+    margin-right:1px;
+    z-index:2 !important;
+}
+@media screen and (max-width: 620px){
+	.img-background{
+		height: 20em;
+	}
+}
+@media screen and (min-width: 621px) and (max-width: 800px){
+	.img-background{
+		height: 30em;
+	}
+}
