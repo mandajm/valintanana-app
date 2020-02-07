@@ -45,7 +45,7 @@
 .menu-top{
 	padding: 0 14px 0 12px;
 }
-@media screen(max-width: 500px){
+@media screen and (max-width: 500px){
 	.menu-top{
 		padding: 0 14px 0 12px;
 	}
@@ -54,15 +54,12 @@
 .border-menu{
 	color:#b39361;
 }
-@media screen(max-width: 500px){
+@media screen and (max-width: 500px){
 	.border-menu{
 		color:#b39361;
 	}
 }
 
-.nav-items{
-
-}
 @media screen and (max-width: 800px){
 	.nav-items{
 		height: 1.9em;
@@ -71,9 +68,6 @@
 .none-boder{
 	border:none;
 }
-@media screen(max-width: 800px){
-}
-
 .menu-search{
 	background-color: rgba(179, 147, 97, 0.23);
 	height: 40px;
@@ -101,6 +95,24 @@
 		margin-left:2em;
 	}
 }
+.menu-nav-top{
+	width: 4em;
+	height: 4em;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	margin-left: 2em;
+}
+.menu-top-bar{
+	width: 2em;
+	height: 2em;
+	position: absolute;
+}
+.menu-nav-top:active{
+	border:2px solid #8a8783a1;
+	box-shadow: 1px 1px #8a8783a1;
+}
 @media screen and (max-width: 800px){
 	.logo-nav-bar{
 		position: absolute;
@@ -109,7 +121,10 @@
 	}
 	.search-bar,.menu-nav-top{
 		align-self: center;
-		color:red;
+	}
+	.menu-nav-top{
+		margin-left: 0.2em;
+		width: 0.7em;
 	}
 }
 .logo-header{
@@ -130,3 +145,69 @@
 	}
 }
 
+.connection-p{
+ 	width: 15em;
+	height: 9.5em;
+}
+.connection-m{
+	z-index: 999;
+	position: fixed;
+	display: none;
+	right: 5px;
+	width: 15em;
+	background-color:#cfcece80;
+	margin-top: 0em;
+}
+.connection-element{
+  background-color: white;
+  height: 8em;
+}
+.element-style-link:hover{
+  color:brown;
+}
+.elements-positions{
+	height:6em;
+	display: flex;
+	flex-direction: column;
+	justify-content:space-around;
+	align-items: center;
+}
+#cancel{
+	margin-top:1em;
+	font-weight: bold;
+	width: 22em;
+	height: 0.5em;
+	font-size:15px;
+	display:flex;
+	flex-direction: row;
+	justify-content: flex-end;
+	align-content: center;
+}
+.navBarLeft{
+	position:fixed;
+	display: none;
+	left: 0;
+	height: 33em;
+	width: 23em;
+	background-color:#cfcece80;
+	z-index: 8;
+}
+.contain-nav-padding{
+  width: 100%;
+  height:100%;
+  padding: 0.2% 1% 0 2%;
+}
+.nav-element{
+	background-color:#e3e0e0cf;
+	width: 22em;
+	height: 32em;
+}
+.element-style{
+  text-transform: uppercase;
+  padding: 5%;
+}
+.element-style-link{
+  color:black;
+  font-size: 1.1rem;
+  font-weight: 300;
+}

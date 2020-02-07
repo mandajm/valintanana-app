@@ -1,0 +1,82 @@
+.page_users{
+  background-color: rgb(179,147,97) !important;
+  height: 40em;
+  width: 100%;
+  margin-top: -1em;
+  padding-top:8em;
+}
+.connection-user{
+  margin-left:30%;
+}
+.new-user_p{
+  position: absolute;
+  width: 26em;
+  height: 28em;
+  background-color:rgb(179,147,97);
+  box-shadow: 2px 2px 2px 2px #0f0e0e99;
+}
+.new_user_margin{
+  padding:3% 2% 1% 2%;
+}
+.nex_users{
+  width: 24em;
+  height: 25.8em;
+  padding-top: 1%;
+  background-color:#f9f1f1e6;
+}
+.form-control_user{
+  padding-top:3%;
+}
+.input_users{
+  border:2px solid brown !important;
+  height: 30px !important;
+  border-radius: 3% !important;
+  padding-left: 2% !important;
+}
+.input_users:focus{
+    background-color: #e0c28766 !important;
+    box-shadow: 1px 1px 0 0px brown !important;
+}
+.reorder-users_new{
+  margin-left:16%;
+  width: 70%;
+  height: 20%;
+}
+.label_new_users{
+  padding-bottom: 1%;
+  color:black;
+}
+.button-send{
+  position: absolute;
+  right: 0 !important;
+  margin-right: 13%;
+}
+.send_users{
+  background-color: brown !important;
+  border:2px;
+  box-shadow: 1px 1px 1px 0px white !important;
+  border-radius:3%;
+  padding:3% 6% 3% 6%;
+}
+.send_users:active{
+    box-shadow: 1px 1px 0 0px brown !important
+}
+.link-left{
+  position:absolute;
+  margin-top:5%;
+  text-align: left;
+}
+.image_users_l{
+  height: 20%;
+  width: 25%;
+  background-color: white;
+  margin-left:3%;
+}
+.resize_image{
+  width: 98%;
+  height: 98%;
+}
+.button-send:active{
+  color:white !important;
+  border:1px solid red;
+}

@@ -10,7 +10,24 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_02_03_080933) do
+ActiveRecord::Schema.define(version: 2020_02_06_063654) do
+
+  create_table "projets", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
+    t.bigint "user_id"
+    t.string "titre_du_projet"
+    t.text "description"
+    t.integer "jeutons"
+    t.integer "jours"
+    t.integer "j_restant"
+    t.integer "financement"
+    t.string "categories"
+    t.string "localisation"
+    t.string "image"
+    t.boolean "statusAdmin", default: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["user_id"], name: "index_projets_on_user_id"
+  end
 
   create_table "users", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.string "email", default: "", null: false
