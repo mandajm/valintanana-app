@@ -11,6 +11,7 @@ class CreateProjets < ActiveRecord::Migration[5.2]
       t.string :categories
       t.string :localisation
       t.string :image
+      t.string :odd
       t.boolean :statusAdmin, default: false
 
       t.timestamps

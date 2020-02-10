@@ -1,0 +1,34 @@
+.p-01{
+	width:89.3em;
+	margin:0 1em 1em 1em;
+	height: 5em;
+}
+.p-02{
+	display: flex;
+	flex-direction:row;
+	felx-wrap:nowrap;
+	align-items: center;
+	justify-content: flex-start;
+}
+.valeur{
+	height: 4em;
+	width: 18em;
+	margin-left:1em;
+	display: flex;
+	flex-direction:column;
+	justify-content: space-between;
+	align-items: flex-start;
+}
+.selectValue{
+	display: block;
+	width: 18em;
+	height: 2.3em;
+}
+.SeparateValue{
+	color:brown;
+}
+
+.ggg{
+	height: 20em;
+	width: 12em;
+}

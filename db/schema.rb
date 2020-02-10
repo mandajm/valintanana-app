@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_02_06_063654) do
+ActiveRecord::Schema.define(version: 2020_02_09_141916) do
 
   create_table "projets", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.bigint "user_id"
@@ -23,10 +23,21 @@ ActiveRecord::Schema.define(version: 2020_02_06_063654) do
     t.string "categories"
     t.string "localisation"
     t.string "image"
+    t.string "odd"
     t.boolean "statusAdmin", default: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["user_id"], name: "index_projets_on_user_id"
+  end
+
+  create_table "suivis", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
+    t.bigint "user_id"
+    t.bigint "projet_id"
+    t.string "color", default: "blue"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["projet_id"], name: "index_suivis_on_projet_id"
+    t.index ["user_id"], name: "index_suivis_on_user_id"
   end
 
   create_table "users", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
@@ -35,6 +46,8 @@ ActiveRecord::Schema.define(version: 2020_02_06_063654) do
     t.string "username", default: "", null: false
     t.string "firstname"
     t.string "lastname"
+    t.string "takalo", default: "0"
+    t.string "IsAdmin", default: "0"
     t.string "reset_password_token"
     t.datetime "reset_password_sent_at"
     t.datetime "remember_created_at"
@@ -53,4 +66,6 @@ ActiveRecord::Schema.define(version: 2020_02_06_063654) do
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
 
+  add_foreign_key "suivis", "projets"
+  add_foreign_key "suivis", "users"
 end

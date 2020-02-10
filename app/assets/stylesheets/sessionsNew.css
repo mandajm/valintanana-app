@@ -80,3 +80,37 @@
   color:white !important;
   border:1px solid red;
 }
+
+.profile-m{
+  position: fixed;
+  display:none;
+  margin-top: 0.5px !important;
+  width: 21em;
+  height: 21em;
+  background-color:#cfcece80;
+  right: 0;
+  z-index: 8;
+}
+.inline-index{
+  display:flex;
+  flex-direction:column;
+  align-items: flex-start;
+  justify-content: center;
+}
+.profil-p{
+  padding:0 2% 1% 2%;
+}
+.profil-element{
+  background-color:white;
+  height: 19em;
+  width: 20em;
+}
+.element-style-link{
+  padding-left:3em;
+  color:black;
+  font-size: 1.1rem;
+  font-weight: 300;
+}
+.element-style-link:active{
+  color:white;
+}

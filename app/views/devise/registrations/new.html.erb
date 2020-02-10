@@ -3,9 +3,17 @@
 <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
   <%= render "devise/shared/error_messages", resource: resource %>
 
+  <div class="field">
+    <%= f.label :firstname, "Nom" %><br />
+    <%= f.text_field :firstname %><br />
+  </div>
+  <div class="field">
+    <%= f.label :lastname, 'Prenom' %><br />
+    <%= f.text_field :lastname %><br />
+  </div>
 
   <div class="field">
-    <%= f.label :username %><br />
+    <%= f.label :username, 'Pseudo' %><br />
     <%= f.text_field :username %><br />
   </div>
 

@@ -1,17 +1,17 @@
 <div class="detail-head">
 	<div class="contain-head">
 		<div class="picturs-detail">
-			<img src="/logo/body/fond.jpg" class="picture-element">
+			<img src="<%= @details.image %>" class="picture-element">
 		</div>
 		<div class="text-detail">
 			<div class="detail-projet-title">
-				Titre du projet
+				<%= @details.titre_du_projet %>
 			</div>
 			<div class="projet-detail-slogan">
-				Slogan
+				<%= @details.description %>
 			</div>
 			<div class="categorie-details-project">
-				-Categorie du projet- CODE N° 5
+				-Categorie du projet- CODE: <%= @details.odd %>
 			</div>
 		</div>
 	</div>
@@ -22,7 +22,11 @@
 	</div>
 </div>
 <div class="details-video">
-	<div class="video-contain"></div>
+	<div class="video-contain">
+	    <video class="video" id="video" controls>
+	      <source src="/video/video01.mp4">
+	    </video>
+	</div>
 	<div class="video-details">
 		<div class="objectif-detail">
 			<div class="collect">
@@ -31,18 +35,18 @@
 				</div>
 				<div class="progress-statut">   
 					<p>
-						<span class="text-detail-color">Nombre de colléctés</span>
+						<span class="text-detail-color"><%= @details.financement %> Colléctées</span>
 							<br> sur <br>
-						<span class="text-detail-color">nombres Objectifs</span>
+						<span class="text-detail-color"><%= @details.jeutons %> requis</span>
 					</p>
 				</div>
 			</div>
 			<div class="day-finish">
 				<div class="day-details">
-					jours restants <br> 58
+					jours restants <br> <%= @details.j_restant %>
 				</div>
 				<div class="valifunder-details">
-					Valifunders <br> 05
+					Valifunders <br> 0
 				</div>
 			</div>
 		</div>
@@ -54,8 +58,8 @@
 				<img src="/logo/body/fond.jpg" class="details-status-picture">
 			</div>
 			<div class="details-statut">
-				<span class="text-detail-color"> Nom</span>
-				<span class="text-detail-color">Localisation</span>
+				<span class="text-detail-color"><%= @details_users.firstname %> <%= @details_users.lastname %>(<%= @details_users.username %>)</span>
+				<span class="text-detail-color"><%= @details.localisation %></span>
 				<span class="text-detail-color">NB de projets créer</span>
 				<span class="text-detail-color">
 					NB de projets soutenus
